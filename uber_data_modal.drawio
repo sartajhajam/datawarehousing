@@ -1,9 +1,35 @@
-<mxfile host="app.diagrams.net" modified="2023-11-15T06:15:51.695Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" version="22.1.1" etag="ekowEyWAja0snQ7lpnD7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-15T06:35:24.462Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="iKujP2hUHQuKssindJgz" version="22.1.1" type="github">
   <diagram name="Page-1" id="NLQWQOxJMAcMwXxlKvtK">
-    <mxGraphModel>
+    <mxGraphModel dx="1050" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="OhVj7zijM3jELd4BjCXY-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OhVj7zijM3jELd4BjCXY-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OhVj7zijM3jELd4BjCXY-2" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;sales_fact_table&amp;nbsp;&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OhVj7zijM3jELd4BjCXY-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;sale_id (pK)&lt;br&gt;ticket_id(FK)&lt;br&gt;user_id(FK)&lt;br&gt;venue_id(FK)&lt;br&gt;ticket_type&lt;br&gt;ticket_price&lt;br&gt;booking_date&amp;nbsp;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=4;" vertex="1" parent="OhVj7zijM3jELd4BjCXY-2">
+          <mxGeometry y="30" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OhVj7zijM3jELd4BjCXY-7" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;event_Dim&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="450" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="OhVj7zijM3jELd4BjCXY-9" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;event_name&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=4;" vertex="1" parent="OhVj7zijM3jELd4BjCXY-7">
+          <mxGeometry y="30" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OhVj7zijM3jELd4BjCXY-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;event_id&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=4;" vertex="1" parent="OhVj7zijM3jELd4BjCXY-7">
+          <mxGeometry y="60" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OhVj7zijM3jELd4BjCXY-11" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;event_date&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=4;" vertex="1" parent="OhVj7zijM3jELd4BjCXY-7">
+          <mxGeometry y="90" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OhVj7zijM3jELd4BjCXY-10" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;event_type&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=4;" vertex="1" parent="OhVj7zijM3jELd4BjCXY-7">
+          <mxGeometry y="110" width="150" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
